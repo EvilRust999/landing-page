@@ -1,0 +1,419 @@
+body {
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  font-family: "AbhayaLibre", sans-serif;
+}
+
+.content-wrapper {
+  max-width: 1444px;
+}
+
+.block-wrapper-facts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 105px 0px;
+  gap: 165px;
+}
+
+/* SECTIONS */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 54px 0px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url(../img/features/features-bg.png) no-repeat center/cover;
+}
+.facts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: #2f2f2f;
+  height: 110px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+/* -------- */
+footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 750px;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-content {
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  top: 36.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 96px;
+}
+
+.hero-content h2 {
+  font-size: 64px;
+  margin-bottom: 46px;
+}
+
+.hero-content p {
+  font-family: "Alexandria", sans-serif;
+  line-height: 100%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-cards {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+  gap: 20px;
+}
+
+.features .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 245px;
+  padding: 120px 0px;
+}
+
+.card {
+  position: relative;
+  border-radius: 40px;
+  display: flex;
+  justify-content: end;
+  width: 272px;
+  height: 338px;
+}
+
+.container-circls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  font-size: 48px;
+  font-weight: 400;
+  background-color: transparent;
+  color: black;
+}
+
+.circle-features {
+  color: white;
+  border: 5px solid white;
+  width: 150px;
+  height: 150px;
+  font-size: 96px;
+}
+
+.circle-global {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #c2c2c2;
+  border-radius: 50%;
+  width: 576px;
+  height: 576px;
+}
+
+.circle-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #2f2f2f;
+  width: 378px;
+  height: 378px;
+  color: white;
+}
+
+.circle-orbit {
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2f2f2f;
+  color: white;
+  bottom: 91.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.one {
+  color: black;
+  background-color: #c2c2c2;
+}
+
+.two {
+  bottom: 70%;
+  left: 91%;
+}
+
+.three {
+  top: 70%;
+  left: 96%;
+}
+
+.four {
+  top: 100%;
+  left: 50%;
+}
+
+.five {
+  top: 70%;
+  left: 4%;
+}
+
+.six {
+  bottom: 70%;
+  left: 9%;
+}
+
+.circle-center h2 {
+  font-family: "AbhayaLibre", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.circle-center p {
+  font-family: "Alexandria", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0;
+  margin-top: 26px;
+}
+
+.cirlce-left {
+  justify-content: left;
+}
+
+.card-text-block {
+  width: 560px;
+  height: 340px;
+  border-radius: 40px;
+}
+
+.card-text {
+  position: absolute;
+  font-family: "Alexandria", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+  width: 475px;
+  text-align: center;
+  bottom: 22%;
+  left: 80.5%;
+  transform: translate(-50%, -50%);
+}
+
+.card-title {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 90px;
+  bottom: -13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  border-radius: 0 0 40px 40px;
+}
+
+.title-fixed {
+  bottom: -13.7%;
+  border-radius: 0 0 100px 100px;
+  height: 226px;
+  font-size: 96px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 80%
+  );
+  width: 100.27%;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 26px;
+  color: white;
+  font-family: "Alexandria", sans-serif;
+  line-height: 120%;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.info-container p {
+  width: 586px;
+}
+
+.Text-Precision h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.Text-Precision {
+  text-align: center;
+}
+
+.Text-Precision p {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin-top: 17px;
+}
+
+.Text-Endurance {
+  text-align: center;
+}
+
+.Text-Endurance h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.Text-Endurance p {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin-top: 12px;
+}
+
+.Text-Aesthetics {
+  text-align: center;
+}
+
+.Text-Aesthetics h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+}
+
+.Text-Aesthetics p {
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  margin-top: 12px;
+}
+
+.block-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 85px;
+}
+
+/* IMAGE CARD */
+.hero-bg {
+  background: url(../img/hero/hero-bg.png) no-repeat center/cover;
+  width: 1443px;
+  height: 608px;
+  border-radius: 40px;
+  filter: brightness(0.8);
+}
+.image-Precision {
+  background: url(../img/hero/hero-card-precision.png) no-repeat center/cover;
+}
+.image-Endurance {
+  background: url(../img/hero/hero-card-endurance.png) no-repeat center/cover;
+}
+.image-Aesthetics {
+  background: url(../img/hero/hero-card-aesthetics.png) no-repeat center/cover;
+}
+.image-Card-Text {
+  background: url(../img/hero/hero-card-text.png) no-repeat center/cover;
+  filter: brightness(0.4);
+}
+.image-features-Precision {
+  background: url(../img/features/Card-Precision.png) no-repeat center/cover;
+  width: 556px;
+  height: 835px;
+}
+.image-features-Endurance {
+  background: url(../img/features/Card-Endurance.png) no-repeat center/cover;
+  width: 556px;
+  height: 835px;
+}
+.image-features-Aesthetics {
+  background: url(../img/features/Card-Aesthetics.png) no-repeat center/cover;
+  width: 556px;
+  height: 835px;
+}
+
+.image-facts-info {
+  background: url(../img/facts/info-image.png) no-repeat center/cover;
+  width: 686px;
+  height: 872px;
+}
