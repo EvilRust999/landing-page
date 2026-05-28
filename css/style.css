@@ -423,3 +423,21 @@ footer .content-wrapper {
   background-color: #c2c2c2;
   color: black;
 }
+
+/* Animations */
+.facts-title,
+.facts-text,
+.info-text,
+.image-facts-info,
+.facts-content {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.facts-title.hidden,
+.facts-text.hidden,
+.facts-content.hidden {
+  opacity: 0;
+  transform: translateY(10px);
+}
