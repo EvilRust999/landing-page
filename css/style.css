@@ -45,7 +45,7 @@ main {
   align-items: center;
 }
 
-footer {
+.footer {
   font-family: "Inter", sans-serif;
   display: flex;
   justify-content: center;
@@ -56,7 +56,7 @@ footer {
   text-align: center;
 }
 /* -------- */
-footer .content-wrapper {
+.footer .content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,6 +68,7 @@ footer .content-wrapper {
   justify-content: space-around;
   align-items: center;
   gap: 30px;
+  position: relative;
 }
 
 .hero-content {
@@ -375,6 +376,51 @@ footer .content-wrapper {
   gap: 85px;
 }
 
+.footer-icon-link {
+  cursor: pointer;
+}
+
+.social-popup {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 275px;
+  height: 115px;
+  gap: 12px;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  transition: 0.3s ease;
+  transform: translate(-50%, 50%);
+  left: 90%;
+  bottom: 64px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.social-popup::after {
+  content: "";
+  background-color: black;
+  width: 28px;
+  height: 28px;
+  rotate: 45deg;
+  position: absolute;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  bottom: -20px;
+  left: 50%;
+}
+
+.social-popup a {
+  color: white;
+  text-decoration: none;
+}
+
 /* IMAGE CARD */
 .hero-bg {
   background: url(../img/hero/hero-bg.png) no-repeat center/cover;
@@ -419,9 +465,14 @@ footer .content-wrapper {
 }
 
 /* JS Classes */
-.active {
+.selected {
   background-color: #c2c2c2;
   color: black;
+}
+.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0%);
 }
 
 /* Animations */
@@ -440,4 +491,27 @@ footer .content-wrapper {
 .facts-content.hidden {
   opacity: 0;
   transform: translateY(10px);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer.reveal {
+  transform: none;
+}
+
+.block-wrapper.reveal {
+  transition:
+    opacity 2s ease,
+    transform 2s ease;
 }
