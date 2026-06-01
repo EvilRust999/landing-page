@@ -222,20 +222,20 @@ main {
   left: 9%;
 }
 
-.circle-center h2 {
+.circle-center .facts-title {
   font-family: "AbhayaLibre", sans-serif;
   font-size: 32px;
   font-weight: 800;
   line-height: 120%;
-  letter-spacing: 0;
+  letter-spacing: 0%;
 }
 
-.circle-center p {
+.circle-center .facts-text {
   font-family: "Alexandria", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 120%;
-  letter-spacing: 0;
+  letter-spacing: 0%;
   margin-top: 26px;
 }
 
@@ -419,6 +419,12 @@ main {
 .social-popup a {
   color: white;
   text-decoration: none;
+}
+
+.facts-title,
+.facts-text,
+.info-text {
+  white-space: pre-line;
 }
 
 /* IMAGE CARD */

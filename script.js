@@ -28,6 +28,10 @@ social.addEventListener("click", () => {
 fetch("./data.json")
   .then((response) => response.json())
   .then((factsData) => {
+    factsTitle.textContent = factsData[0].title;
+    factsText.textContent = factsData[0].titleText;
+    infoText.textContent = factsData[0].text;
+    factsImage.style.background = `url(${factsData[0].image}) no-repeat center/cover`;
     clickCirle.forEach((circles, index) => {
       circles.addEventListener("click", () => {
         if (circles.classList.contains("selected")) {
